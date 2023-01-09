@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* background image style */
+.header{
+    background-image: url('../images/photo-1561758033-d89a9ad46330.avif');
+    background-size: cover;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-color: rgba(77, 73, 73, 0.397);
+    background-blend-mode: darken;
+}
+@media screen and (max-width:576px) {
+    .header{
+        background-size: contain;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .header{
+        background-size: contain;
+    }
+}
