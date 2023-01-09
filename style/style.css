@@ -2,24 +2,111 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
+    border: none;
+    outline: none;
+}
+
+:root{
+    --text-color-secondary:rgb(238, 236, 236);
+    --text-color-primary:rgb(255, 220, 168);
+    --text-color-hover:gray;
+    --text-color-btn:black;
+
+    --btn-bg-primary:rgba(238, 245, 173, 0.938);
+    --btn-padding:15px 20px;
+
+     --font-size-title:2.5vw;
+     --font-size-secondary:2rem;
+     --fw:500;
+
+}
+/* responsive image */
+img{
+    max-width: 100%;
+}
+/* container  */
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+@media screen and (max-width:576px) {
+   .container{
+    padding: 0 30px;
+   }
 }
 
 /* background image style */
-.header{
+.banner{
     background-image: url('../images/photo-1561758033-d89a9ad46330.avif');
     background-size: cover;
-    height: 700px;
+    min-height: 700px;
     background-repeat: no-repeat;
     background-color: rgba(77, 73, 73, 0.397);
     background-blend-mode: darken;
 }
-@media screen and (max-width:576px) {
-    .header{
-        background-size: contain;
-    }
+.banner-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:500px;
+    color: var(--text-color-secondary);
+    font-size: var(--font-size-title);
+    text-align: center;
+
+    
 }
-@media screen and (min-width:768px) and (max-width:992px) {
+
+
+/* button style */
+.btn-primary{
+    background-color: var(--btn-bg-primary);
+    padding: var(--btn-padding);
+    color: var(--text-color-btn);
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+   
+}
+/* @media screen and (max-width:576px) {
+    .header{
+        background-size: cover;
+    }
+} */
+/* @media screen and (min-width:768px) and (max-width:992px) {
     .header{
         background-size: contain;
     }
+} */
+/* background image style */
+
+
+
+/* nav style */
+nav{
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    color: var(--text-color-primary);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+    font-weight: var(--fw);
+}
+nav li:hover{
+   color:var(--text-color-hover);
+}
+
+.logo{
+    color: var(--text-color-secondary);
+    font-family: 'Moon Dance', cursive;
+    font-size: var(--font-size-title);
+}
+span{
+    color: var(--text-color-primary);
 }
