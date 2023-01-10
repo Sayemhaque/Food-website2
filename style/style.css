@@ -61,6 +61,16 @@ main{
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     
 }
+@media screen and (max-width:576px) {
+    .banner-info{
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 577.98px) and (max-width:991.98px) { 
+   .banner-info{
+    font-size: 1.5rem;
+   }
+}
 
 
 /* button style */
@@ -131,6 +141,12 @@ span{
     color: var(--text-color-primary);
     font-family: 'Moon Dance', cursive;
 }
+@media screen and (max-width:576px) {
+    .section-title{
+        font-size: 30px;
+    }
+}
+
 
 .menu-items{
     display: grid;
