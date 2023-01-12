@@ -5,6 +5,7 @@
   list-style-type: none;
   border: none;
   outline: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
@@ -119,8 +120,7 @@ nav ul {
   cursor: pointer;
   align-items: center;
   font-weight: bold;
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-  font-size: 23px;
+  font-size: 18px;
 }
 nav li:hover {
   color: var(--text-color-hover);
@@ -399,7 +399,9 @@ span {
   font-size: 20px;
   justify-content: center;
 }
-
+address > p{
+  margin-bottom: 10px;
+}
 @media screen and (max-width: 576px) {
   .footer-info {
     grid-template-columns: repeat(1, 1fr);
