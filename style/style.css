@@ -42,19 +42,11 @@ main {
 .banner {
   background-image: url("../images/photo-1561758033-d89a9ad46330.avif");
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-color: rgba(77, 73, 73, 0.479);
   background-blend-mode: darken;
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 84%,
-    75% 72%,
-    50% 81%,
-    24% 76%,
-    0 89%
-  );
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 }
 .banner-info {
   display: flex;
@@ -263,7 +255,7 @@ span {
     gap: 30px;
   }
   .about-title {
-    font-size: 25px;
+    font-size: 20px;
   }
   .about-description {
     font-size: 13px;
@@ -318,9 +310,10 @@ span {
   .event-info {
     flex-direction: column-reverse;
     gap: 30px;
+    padding-left: 10px;
   }
   .event-title {
-    font-size: 25px;
+    font-size: 20px;
   }
   .event-description {
     font-size: 13px;
@@ -408,15 +401,20 @@ span {
 
 @media screen and (max-width: 576px) {
   .footer-info{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     gap: 30px;
-    padding: 50px 50px;
+    padding: 20px 10px;
+    text-align: center;
+    
+ }
+ .info-items-location-title,.main-location-info-title ,.info-items-contact-title{
+  font-size: 18px;
  }
 }
 @media (min-width: 577.98px) and (max-width: 991.98px) {
   .footer-info{
     grid-template-columns: repeat(2,1fr);
-    gap: 30px;
-    padding: 50px 50px;
+    padding: 20px 10px;
+    text-align: center;
  }
 }
