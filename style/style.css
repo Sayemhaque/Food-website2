@@ -177,13 +177,15 @@ span {
   border-radius: 15px;
   box-shadow: 5px 3px 5px rgb(44, 42, 42);
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  transition: all 1s ease-in-out;
 }
 .menu-item:hover {
-  transition: transform 1s linear;
   transform: rotate(3deg);
 }
+.menu-item img{
+  transition: all 1s ease-in-out;
+}
 .menu-item img:hover {
-  transition: transform 1s linear;
   transform: scale(1.2);
   cursor: pointer;
 }
@@ -420,3 +422,4 @@ address > p{
     text-align: center;
   }
 }
+
