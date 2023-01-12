@@ -31,7 +31,7 @@ img {
   margin: 0 auto;
 }
 body {
-  background-color: black;
+  background-color: #02001b;
 }
 
 main {
@@ -147,7 +147,6 @@ span {
   }
 }
 
-
 /* menu section style */
 .menu {
   padding: 40px 0;
@@ -170,7 +169,6 @@ span {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
-
 
 .menu-item {
   background-image: linear-gradient(
@@ -207,14 +205,15 @@ span {
   font-size: 20px;
   font-weight: bold;
   color: rgb(100, 99, 98);
-}@media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 576px) {
   .menu-items {
     grid-template-columns: repeat(1, 1fr);
   }
-  .item-title{
+  .item-title {
     font-size: 20px;
   }
-  .item-description{
+  .item-description {
     font-size: 13px;
   }
 }
@@ -233,7 +232,7 @@ span {
   align-items: center;
   gap: 30px;
   background-image: linear-gradient(
-    to top right,
+    to top left,
     rgb(255, 213, 150),
     rgba(255, 168, 168, 0.897)
   );
@@ -253,18 +252,24 @@ span {
   color: var(--text-color-hover);
   margin-bottom: 20px;
 }
+.about-info-texts{
 
+  padding-left: 40px;
+}
 @media screen and (max-width: 576px) {
   .about-info {
     flex-direction: column;
     padding: 2px;
     gap: 30px;
   }
-  .about-title{
-     font-size: 25px;
+  .about-title {
+    font-size: 25px;
   }
-  .about-description{
+  .about-description {
     font-size: 13px;
+  }
+  .about-info-texts{
+    padding-left: 10px;
   }
 }
 @media (min-width: 577.98px) and (max-width: 991.98px) {
@@ -274,7 +279,6 @@ span {
     text-align: center;
   }
 }
-
 
 /* event styles */
 .upcoming-event {
@@ -306,17 +310,58 @@ span {
   color: var(--text-color-hover);
   margin-bottom: 20px;
 }
+.event-info-texts{
+  padding-right: 40px;
+}
 
 @media screen and (max-width: 576px) {
   .event-info {
     flex-direction: column-reverse;
-    padding: 0px;
     gap: 30px;
   }
-  .event-title{
-     font-size: 25px;
+  .event-title {
+    font-size: 25px;
   }
-  .event-description{
+  .event-description {
     font-size: 13px;
   }
+  .event-info-texts{
+    padding-right: 10px;
+  }
+  
+}
+
+.discover-menu {
+  background-image: url("/images/photo-1552566626-52f8b828add9.jpg");
+  min-height: 500px;
+  background-color: #0f0f1380;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+
+}
+
+.line{
+  border: 2px solid white;
+  height: 200px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+ .buttons{
+  flex-direction: column;
+ }
+ .line{
+  transform: transform;
+  transform: rotate(360deg);
+ }
 }
