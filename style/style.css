@@ -318,6 +318,13 @@ span {
     gap: 30px;
     padding-left: 10px;
   }
+  @media (min-width: 577.98px) and (max-width: 991.98px) {
+    .about-info {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+  }
   .event-title {
     font-size: 20px;
   }
