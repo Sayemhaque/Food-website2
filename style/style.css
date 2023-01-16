@@ -17,7 +17,7 @@
   --btn-bg-primary: rgb(255, 220, 168);
   --btn-padding: 10px 50px;
 
-  --font-size-title: 2.5rem;
+  --font-size-title: 2rem;
   --font-size-secondary: 2rem;
   --fw: 500;
 }
@@ -63,11 +63,21 @@ main {
 @media screen and (max-width: 576px) {
   .banner-info {
     font-size: 1rem;
+    height: 300px;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 @media (min-width: 577.98px) and (max-width: 991.98px) {
   .banner-info {
     font-size: 1.5rem;
+    height: 90vh;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 
